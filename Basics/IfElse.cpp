@@ -2,16 +2,35 @@
 using namespace std;
 int main()
 {
-    int age;
-    cout << "Enter age: ";
-    cin >> age;
-    if (age >= 18)
+    int marks;
+    cout << "Enter your marks: ";
+    cin >> marks;
+    if (marks < 25 && marks >= 0)
     {
-        cout << "You are an adult.";
+        cout << "F grade.";
+    }
+    else if (marks <= 44)
+    {
+        cout << "E grade.";
+    }
+    else if (marks <=49)
+    {
+        cout << "D grade.";
+    }
+    else if (marks <= 59)
+    {
+        cout << "C grade.";
+    }
+    else if (marks <= 79)
+    {
+        cout << "B grade!";
+    }
+    else if (marks <= 100)
+    {
+        cout << "A grade!";
     }
     else
     {
-        cout << "You are not an adult.";
+        cout << "Invalid input.";
     }
-    return 0;
 }
